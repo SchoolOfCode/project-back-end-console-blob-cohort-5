@@ -13,7 +13,19 @@ namespace Server.Controllers
     {
         private readonly IRepository<Country> _countryRepository;
 
-        public
-       
+        public CountryController(IRepository<Country> countryreository)
+       {
+           _countryRepository=countryreository;
+       }
+
+       [HttpGet]
+       public IEnumerable<Country> GetAll(string search)
+       {
+           if(search !=null){
+               return _countryRepository.Search(search);
+           }
+           return _countryRepository.GetAll();
+       }
+      
     }
 }
