@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bootcamp6\\Documents\\Steve\\Projects\\Final Project\\Server\\Server.csproj": {}
+    "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bootcamp6\\Documents\\Steve\\Projects\\Final Project\\Server\\Server.csproj": {
+    "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bootcamp6\\Documents\\Steve\\Projects\\Final Project\\Server\\Server.csproj",
+        "projectUniqueName": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\bootcamp6\\Documents\\Steve\\Projects\\Final Project\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\bootcamp6\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bootcamp6\\Documents\\Steve\\Projects\\Final Project\\Server\\obj\\",
+        "projectPath": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj",
+        "packagesPath": "/Users/craigfarrell/.nuget/packages/",
+        "outputPath": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\bootcamp6\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/craigfarrell/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -38,6 +38,18 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0-preview.2.21154.6, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -61,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
         }
       }
     }

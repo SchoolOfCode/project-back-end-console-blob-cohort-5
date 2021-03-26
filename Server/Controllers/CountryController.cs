@@ -11,15 +11,15 @@ namespace Server.Controllers
     [Route("country")]
     public class CountryController : ControllerBase
     {
-        private readonly IRepository<Country> _countryRepository;
+        private readonly IRepository<CountryObj> _countryRepository;
 
-        public CountryController(IRepository<Country> countryreository)
+        public CountryController(IRepository<CountryObj> countryreository)
        {
            _countryRepository=countryreository;
        }
 
        [HttpGet]
-       public IEnumerable<Country> GetAll(string search)
+       public IEnumerable<CountryObj> GetAll(string search)
        {
            if(search !=null){
                return _countryRepository.Search(search);

@@ -1,15 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "iHWGAVL7Ul6AU91adDCyDKbXLNI04UqJ7Yf9oZuU5HVqq9tXBPYqS3FN7yulnDAYVRo3rdU9TcBVPIAbe72jNA==",
+  "dgSpecHash": "nsncu5yFjP7HlqwquMIwJwtnB8BBAkGa3D0/Q/UYuhU2jBEQpsfeSsWYgLcDdRXwe/Jxbca8IDdQSBNgk+Xhgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bootcamp6\\Documents\\Steve\\Projects\\Final Project\\Server\\Server.csproj",
+  "projectFilePath": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\bootcamp6\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
-    "C:\\Users\\bootcamp6\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
-    "C:\\Users\\bootcamp6\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
-    "C:\\Users\\bootcamp6\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
-    "C:\\Users\\bootcamp6\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\bootcamp6\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "/Users/craigfarrell/.nuget/packages/dapper/2.0.78/dapper.2.0.78.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/microsoft.extensions.configuration/6.0.0-preview.2.21154.6/microsoft.extensions.configuration.6.0.0-preview.2.21154.6.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/microsoft.extensions.configuration.abstractions/6.0.0-preview.2.21154.6/microsoft.extensions.configuration.abstractions.6.0.0-preview.2.21154.6.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/microsoft.extensions.primitives/6.0.0-preview.2.21154.6/microsoft.extensions.primitives.6.0.0-preview.2.21154.6.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/npgsql/5.0.4/npgsql.5.0.4.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "/Users/craigfarrell/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0-preview.2.21154.6/system.runtime.compilerservices.unsafe.6.0.0-preview.2.21154.6.nupkg.sha512"
   ],
   "logs": []
 }

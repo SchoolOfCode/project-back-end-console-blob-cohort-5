@@ -1,15 +1,12 @@
 using System;
 
-namespace Server
-{
-    public class ToBeNamed
+
+    public class CountryObj
     {
-        public DateTime Date { get; set; }
-
-        public int TemperatureC { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-
-        public string Summary { get; set; }
+        public int Id { get; set; }
+        public string Country { get; set; }
+        public string ImageSrc { get; set; }
+        public string QuarantineReq { get; set; }
+        public string Restrictions { get; set; }
     }
-}
+

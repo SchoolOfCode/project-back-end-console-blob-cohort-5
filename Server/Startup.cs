@@ -27,6 +27,8 @@ namespace Server
         public void ConfigureServices(IServiceCollection services)
         {
 
+
+            services.AddTransient<IRepository<CountryObj>, CountryRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

@@ -1,48 +1,28 @@
 //Puls web scaroed information back from Heroku Database
 
-
-//code below to be edited 
 using System.Collections.Generic;
 using Microsoft.Extensions.Configuration;
 using Dapper;
 using System.Threading.Tasks;
 using System.Numerics;
 
-public class BikeRepository : BaseRepository, IRepository<Bike>
+public class CountryRepository : BaseRepository, IRepository<CountryObj>
 {
 
-    public BikeRepository(IConfiguration configuration) : base(configuration) { }
+    public CountryRepository(IConfiguration configuration) : base(configuration) { }
 
-    public IEnumerable<Bike> Search(string search)
+    public IEnumerable<CountryObj> Search(string search)
     {
         using var connection = CreateConnection();
-        IEnumerable<Bike> bikes = connection.Query<Bike>("SELECT * FROM Bikes WHERE Genre ILIKE @Search OR Author ILIKE @Search OR Title ILIKE @Search OR Color ILIKE @Search;", new { Search = $"%{search}%" });
-        return bikes;
+        IEnumerable<CountryObj> countries = connection.Query<CountryObj>("SELECT * FROM webscraperv2 WHERE Country ILIKE @Search;", new { Search = $"%{search}%" });
+        return countries;
     }
 
-    public IEnumerable<Bike> GetAll()
+    public IEnumerable<CountryObj> GetAll()
     {
         using var connection = CreateConnection();
-        IEnumerable<Bike> bikes = connection.Query<Bike>("SELECT * FROM Bikes;");
-        return bikes;
+        IEnumerable<CountryObj> countries = connection.Query<CountryObj>("SELECT * FROM webscraperv2;");
+        return countries;
     }
 
-    public async Task<Bike> Get(int id)
-    {
-        using var connection = CreateConnection();
-        return await connection.QuerySingleAsync<Bike>("SELECT * FROM Bikes WHERE id = @ID;", new { ID = id });
-
-    }
-
-    public async Task<Bike> Insert(Bike bikeObject)
-    {
-        using var connection = CreateConnection();
-        return await connection.QuerySingleAsync<Bike>("INSERT INTO Bikes (Title, Artist, SongLengthCode, Link, SuggestedBy) VALUES (@Title, @Artist, @SongLengthCode, @Link, @SuggestedBy); SELECT * FROM Songs LIMIT 1;", bikeObject);
-    }
-
-    public async Task<Bike> Update(Bike aBike)
-    {
-        using var connection = CreateConnection();
-        return await connection.QuerySingleAsync<Bike>("UPDATE Bikes SET Title = @Title, Artist = @Artist, SongLengthCode = @SongLengthCode, Link = @Link, SuggestedBy = @SuggestedBy WHERE Id = @Id;", aBike);
-    }
 }
