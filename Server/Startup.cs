@@ -17,7 +17,7 @@ namespace Server
 {
     public class Startup
     {
-        // readonly string frontEnd = "_frontEnd";
+         readonly string frontEnd = "_frontEnd";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,14 +26,14 @@ namespace Server
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IRepository<CountryObj>, CountryRepository>();
+           // services.AddTransient<IRepository<CountryObj>, CountryRepository>();
             services.AddControllers();
             services.AddCors(options =>
       {
-          options.AddDefaultPolicy(
+          options.AddPolicy(name: frontEnd,
                             builder =>
                             {
-                                builder.AllowAnyOrigin()
+                                builder.WithOrigins("http://localhost:3000")
                                 .AllowAnyHeader()
                                 .AllowAnyMethod();
                             });
@@ -55,7 +55,7 @@ namespace Server
         // }
         app.UseHttpsRedirection();
         app.UseRouting();
-        app.UseCors();
+        app.UseCors(frontEnd);
         app.UseAuthorization();
         app.UseEndpoints(endpoints =>
         {
