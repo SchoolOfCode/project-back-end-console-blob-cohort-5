@@ -35,6 +35,7 @@ namespace Server
                             {
                                 builder.WithOrigins("http://localhost:3000")
                                 .AllowAnyHeader()
+                                .AllowCredentials() //adding this line corrected the CORS error we were getting
                                 .AllowAnyMethod();
                             });
         services.AddTransient<IRepository<CountryObj>, CountryRepository>();
