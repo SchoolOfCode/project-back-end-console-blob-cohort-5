@@ -1,6 +1,7 @@
 using System;
 
-
+namespace Server.Models
+{
     public class CountryObj
     {
         
@@ -11,4 +12,4 @@ using System;
         public string ToEngfFromInt { get; set; }
 
     }
-
+}

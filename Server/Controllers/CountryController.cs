@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Server.Models;
+using Server.Data;
 
 namespace Server.Controllers
 {
@@ -11,20 +13,18 @@ namespace Server.Controllers
     [Route("country")]
     public class CountryController : ControllerBase
     {
-        private readonly IRepository<CountryObj> _countryRepository;
+        private readonly IRepository _countryRepository;
 
-        public CountryController(IRepository<CountryObj> countryreository)
+        public CountryController(IRepository countryreository)
        {
-           _countryRepository=countryreository;
+           _countryRepository = countryreository;
        }
 
        [HttpGet]
-       public IEnumerable<CountryObj> GetAll(string search)
+       public ActionResult<IEnumerable<CountryObj>> GetAll()
        {
-           if(search !=null){
-               return _countryRepository.Search(search);
-           }
-           return _countryRepository.GetAll();
+           var countryObjs = _countryRepository.GetAll();
+           return Ok(countryObjs);
        }
       
     }

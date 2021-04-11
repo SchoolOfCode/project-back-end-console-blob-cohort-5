@@ -3,6 +3,8 @@ using System.Data;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
 
+namespace Server.Data 
+{             
 public class BaseRepository
 {
     IConfiguration _configuration;
@@ -35,7 +37,7 @@ public class BaseRepository
         return conn;
     }
 }
-
+}
 //  var stringBuilder = new NpgsqlConnectionStringBuilder
 //         {
 //             Host = "ec2-99-81-238-134.eu-west-1.compute.amazonaws.com", // e.g. ec2-1-2-3-4@eu-west-1.compute.amazonaws.com

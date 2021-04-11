@@ -11,6 +11,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Server.Data;
+using Server.Models;
 //THIS IS UP TO DATE 
 
 namespace Server
@@ -31,7 +33,7 @@ namespace Server
         {
             // services.AddTransient<>();
                         
-            services.AddTransient<IRepository<CountryObj>, CountryRepository>();
+            services.AddTransient<IRepository, CountryRepository>();
             services.AddControllers();
             services.AddCors(options =>
             {
