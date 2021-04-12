@@ -16,7 +16,7 @@ public class CountryRepository : BaseRepository, IRepository
     public IEnumerable<CountryObj> Search(string search)
     {
         using var connection = CreateConnection();
-        IEnumerable<CountryObj> countries = connection.Query<CountryObj>("SELECT * FROM GovAdvice2", new { Search = $"%{search}%" });
+        IEnumerable<CountryObj> countries = connection.Query<CountryObj>("SELECT * FROM GovAdvice", new { Search = $"%{search}%" });
 
         return countries;
     }
@@ -24,7 +24,7 @@ public class CountryRepository : BaseRepository, IRepository
     public IEnumerable<CountryObj> GetAll()
     {
         using var connection = CreateConnection();
-        IEnumerable<CountryObj> countries = connection.Query<CountryObj>("SELECT * FROM GovAdvice2;");
+        IEnumerable<CountryObj> countries = connection.Query<CountryObj>("SELECT * FROM GovAdvice;");
         return countries;
     }
 
