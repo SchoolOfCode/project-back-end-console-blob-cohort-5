@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\mafes\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\mafes\\.nuget\\packages"
+      "/Users/craigfarrell/.dotnet/store/|arch|/|tfm|",
+      "/Users/craigfarrell/.nuget/packages"
     ]
   }
 }

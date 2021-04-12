@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server.UnitTests\\Server.UnitTests.csproj": {}
+    "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server.UnitTests/Server.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server.UnitTests\\Server.UnitTests.csproj": {
+    "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server.UnitTests/Server.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server.UnitTests\\Server.UnitTests.csproj",
+        "projectUniqueName": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server.UnitTests/Server.UnitTests.csproj",
         "projectName": "Server.UnitTests",
-        "projectPath": "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server.UnitTests\\Server.UnitTests.csproj",
-        "packagesPath": "C:\\Users\\mafes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server.UnitTests\\obj\\",
+        "projectPath": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server.UnitTests/Server.UnitTests.csproj",
+        "packagesPath": "/Users/craigfarrell/.nuget/packages/",
+        "outputPath": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server.UnitTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mafes\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/craigfarrell/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server\\Server.csproj": {
-                "projectPath": "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server\\Server.csproj"
+              "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj": {
+                "projectPath": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj"
               }
             }
           }
@@ -90,21 +90,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server\\Server.csproj": {
+    "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server\\Server.csproj",
+        "projectUniqueName": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\mafes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mafes\\Documents\\School of Code\\Final Project\\project-back-end-console-blob-cohort-5\\Server\\obj\\",
+        "projectPath": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj",
+        "packagesPath": "/Users/craigfarrell/.nuget/packages/",
+        "outputPath": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mafes\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/craigfarrell/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -132,9 +132,17 @@
               "target": "Package",
               "version": "[2.0.78, )"
             },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.0-preview.2.21154.6, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[4.2.2, )"
             },
             "Npgsql": {
               "target": "Package",
@@ -167,7 +175,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
         }
       }
     }
