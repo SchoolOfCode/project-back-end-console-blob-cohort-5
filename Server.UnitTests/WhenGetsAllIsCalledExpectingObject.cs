@@ -21,11 +21,11 @@ namespace Server.UnitTests
             {
                 new CountryObj
                 {
-                    EnglandInternal = "Allowed",
+                    WithinEng = "Allowed",
                     ToEnglandFromUK = "Allowed",
                     ToUkFromEngland = "Allowed",
-                    InetnationalFromEng = "Not allowed",
-                    ToEngfFromInt = "Allowed"
+                    IntFromEng = "Not allowed",
+                    ToEngFromInt = "Allowed"
                 }
             };
 
