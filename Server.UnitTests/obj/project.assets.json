@@ -8172,8 +8172,8 @@
     },
     "Server/1.0.0": {
       "type": "project",
-      "path": "../Server/Server.csproj",
-      "msbuildProject": "../Server/Server.csproj"
+      "path": "../Server.csproj",
+      "msbuildProject": "../Server.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8213,8 +8213,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj": {
-              "projectPath": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server/Server.csproj"
+            "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server.csproj": {
+              "projectPath": "/Users/craigfarrell/Desktop/SoC/FinalProject/project-back-end-console-blob-cohort-5/Server.csproj"
             }
           }
         }
