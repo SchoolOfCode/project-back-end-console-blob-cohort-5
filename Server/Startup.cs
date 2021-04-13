@@ -19,7 +19,7 @@ namespace Server
 {
     public class Startup
     {
-        readonly string MyAllowSpecificOrigins = "_MyAllowSpecificOrigins";
+        // readonly string MyAllowSpecificOrigins = "_MyAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
