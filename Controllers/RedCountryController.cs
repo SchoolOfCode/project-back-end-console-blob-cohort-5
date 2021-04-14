@@ -21,10 +21,12 @@ namespace Server.Controllers
        }
 
        [HttpGet]
-       public ActionResult<IEnumerable<RedCountry>> GetAll()
-       {
-           var redCountries = _redCountryRepository.GetAll();
-           return Ok(redCountries);
+       public IEnumerable<RedCountry> GetAll(string search)
+       {    if(search != null){
+           return _redCountryRepository.Search(search);
+       }
+        //    var redCountries =
+           return  _redCountryRepository.GetAll();
        }
       
     }

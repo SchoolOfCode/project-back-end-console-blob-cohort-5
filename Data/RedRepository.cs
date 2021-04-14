@@ -16,7 +16,7 @@ public class RedRepository : BaseRepository, IRepository<RedCountry>
     public IEnumerable<RedCountry> Search(string search)
     {
         using var connection = CreateConnection();
-        IEnumerable<RedCountry> countries = connection.Query<RedCountry>("SELECT * FROM GovAdvice", new { Search = $"%{search}%" });
+        IEnumerable<RedCountry> countries = connection.Query<RedCountry>("SELECT * FROM RedCountries WHERE Content ILIKE @Search;", new { Search = $"%{search}%" });
 
         return countries;
     }
@@ -24,7 +24,7 @@ public class RedRepository : BaseRepository, IRepository<RedCountry>
     public IEnumerable<RedCountry> GetAll()
     {
         using var connection = CreateConnection();
-        IEnumerable<RedCountry> countries = connection.Query<RedCountry>("SELECT * FROM GovAdvice;");
+        IEnumerable<RedCountry> countries = connection.Query<RedCountry>("SELECT * FROM RedCountries;");
         return countries;
     }
 
