@@ -13,9 +13,9 @@ namespace Server.Controllers
     [Route("country")]
     public class CountryController : ControllerBase
     {
-        private readonly IRepository _countryRepository;
+        private readonly IRepository<CountryObj> _countryRepository;
 
-        public CountryController(IRepository countryreository)
+        public CountryController(IRepository<CountryObj> countryreository)
        {
            _countryRepository = countryreository;
        }

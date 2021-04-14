@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Server.Data
 { 
 
-public class CountryRepository : BaseRepository, IRepository
+public class CountryRepository : BaseRepository, IRepository<CountryObj>
 {
     public CountryRepository(IConfiguration configuration) : base(configuration) { }
 

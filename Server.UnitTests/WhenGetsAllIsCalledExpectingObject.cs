@@ -29,7 +29,7 @@ namespace Server.UnitTests
                 }
             };
 
-            var countryrepository = Substitute.For<IRepository>();
+            var countryrepository = Substitute.For<IRepository<CountryObj>>();
             countryrepository.GetAll().Returns(x => _CountryObjs);
 
             _controller = new CountryController(countryrepository);

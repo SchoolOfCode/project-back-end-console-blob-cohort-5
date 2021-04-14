@@ -5,9 +5,9 @@ using Server.Models;
 
 namespace Server.Data
 {
-public interface IRepository
+public interface IRepository<T>
 {
-    IEnumerable<CountryObj> GetAll();
-    IEnumerable<CountryObj> Search(string search);
+    IEnumerable<T> GetAll();
+    IEnumerable<T> Search(string search);
 }
 } 

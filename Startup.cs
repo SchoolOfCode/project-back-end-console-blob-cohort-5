@@ -33,7 +33,8 @@ namespace Server
         {
             // services.AddTransient<>();
                         
-            services.AddTransient<IRepository, CountryRepository>();
+            services.AddTransient<IRepository<CountryObj>, CountryRepository>();
+            services.AddTransient<IRepository<RedCountry>, RedRepository>();
             services.AddControllers();
             services.AddCors(options =>
             {
